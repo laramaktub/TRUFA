@@ -1,0 +1,14 @@
+#!/bin/bash
+#@ job_name = fastqc
+#@ initialdir = .
+#@ output = /gpfs/csic_users/lara/server_side/fastqc%j.out
+#@ error = /gpfs/csic_users/lara/server_side/fastqc%j.err
+#@ total_tasks = 2
+#@ cpus_per_task = 2
+#@ wall_clock_limit = 03:00:00
+
+
+module load PYTHON
+
+    time srun --exclusive -n1 /gpfs/csic_users/lara/udocker run -v  /gpfs/csic_users/lara/:$HOME  mycleaning /bin/bash  -c '/gpfs/csic_users/lara/server_side/lara_launcher.py -c; cd /gpfs/csic_users/lara/server_side/testinglara/jobs/Job_trial_new_release2/.cache/tmp/; source fast*' 
+

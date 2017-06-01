@@ -1,0 +1,54 @@
+20170526 16:48:35 -INFO- Start server side
+20170526 17:51:25 -INFO- Start server side
+20170529 09:48:12 -INFO- Start server side
+20170529 10:02:10 -INFO- Start server side
+20170529 10:04:52 -INFO- Start server side
+20170529 10:08:38 -INFO- Start server side
+20170529 10:21:41 -INFO- Start server side
+20170529 10:22:16 -INFO- Start server side
+20170529 10:22:16 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170529 10:22:22 -INFO- Start server side
+20170529 10:24:42 -INFO- Start server side
+20170529 10:24:43 -ERROR- [Errno 2] No such file or directory: '/home/ubuntu/server_side/commands/ass_map/laraclustering.cmd'
+20170529 10:25:52 -INFO- Start server side
+20170529 10:26:13 -INFO- Start server side
+20170529 10:26:14 -ERROR- [Errno 2] No such file or directory: '/home/ubuntu/server_side/commands/ass_map/laraclustering.cmd'
+20170529 10:29:54 -INFO- Start server side
+20170529 10:29:54 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170529 10:30:01 -INFO- Start server side
+20170529 10:30:02 -ERROR- [Errno 2] No such file or directory: '/home/ubuntu/server_side/commands/ass_map/laraclustering.cmd'
+20170529 10:31:04 -INFO- Start server side
+20170529 10:31:04 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170529 10:31:10 -INFO- Start server side
+20170529 10:31:11 -ERROR- [Errno 2] No such file or directory: '/home/ubuntu/server_side/commands/ass_map/laraclustering.cmd'
+20170529 10:33:06 -INFO- Start server side
+20170529 10:33:07 -ERROR- sequence item 0: expected string, NoneType found
+20170529 11:17:54 -INFO- Start server side
+20170529 11:18:59 -INFO- Start server side
+20170529 11:19:28 -INFO- Start server side
+20170529 11:19:29 -ERROR- sequence item 0: expected string, NoneType found
+20170529 11:23:43 -INFO- Start server side
+20170529 11:23:43 -ERROR- sequence item 0: expected string, NoneType found
+20170529 12:15:20 -INFO- Start server side
+20170529 12:15:20 -ERROR- sequence item 0: expected string, NoneType found
+20170529 12:15:41 -INFO- Start server side
+20170529 12:15:42 -ERROR- sequence item 0: expected string, NoneType found
+20170529 13:01:17 -INFO- Start server side
+20170529 13:03:50 -INFO- Start server side
+20170529 13:05:57 -INFO- Start server side
+20170529 13:05:58 -ERROR- sequence item 0: expected string, NoneType found
+20170529 17:55:57 -INFO- Start server side
+20170529 18:00:20 -INFO- Start server side
+20170529 18:17:19 -INFO- Start server side
+20170529 18:21:43 -INFO- Start server side
+20170529 18:23:25 -INFO- Start server side
+20170529 18:25:33 -ERROR- list index out of range
+20170529 18:28:36 -INFO- Start server side
+20170529 18:36:40 -INFO- Start server side
+20170529 18:42:22 -INFO- Start server side
+20170529 18:55:39 -INFO- Start server side
+20170530 10:30:35 -INFO- Start server side
+20170530 10:32:44 -ERROR- list index out of range
+20170530 11:52:56 -INFO- Start server side
+20170530 13:47:41 -INFO- Start server side
+20170530 13:47:46 -ERROR- [Errno 2] No such file or directory: '/home/ubuntu/server_side/commands/ass_map/laracegma.cmd'
