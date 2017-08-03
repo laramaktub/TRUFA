@@ -6,7 +6,7 @@ echo `date +%F\ %H:%M:%S` "START EXPRESS" >> ${OUT_FOLDER}.LOG.txt
 # IO:
 #-------------------------------------------------------------------------------
 ref=$ASSEMBLY_FILE
-bam=${ASSEMBLY_MAPPING_FOLDER}bowtie2/aligned_reads_sort_nodup_mateok.bam
+bam=${ASSEMBLY_MAPPING_FOLDER}hisat2/aligned_reads_sort_nodup_mateok.bam
 mkdir ${EXPRESSION_FOLDER}express
 bam_tmp=${EXPRESSION_FOLDER}express/aligned_reads_rsort4express
 #-------------------------------------------------------------------------------

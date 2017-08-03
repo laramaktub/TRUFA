@@ -4,9 +4,9 @@ echo `date +%F\ %H:%M:%S` "START bam_postproc" >> ${OUT_FOLDER}.LOG.txt
 
 #IO
 #-------------------------------------------------------------------------------
-sam=${ASSEMBLY_MAPPING_FOLDER}bowtie2/aligned_reads.sam
+sam=${ASSEMBLY_MAPPING_FOLDER}hisat2/aligned_reads.sam
 ref=$ASSEMBLY_FILE
-bam=${ASSEMBLY_MAPPING_FOLDER}bowtie2/aligned_reads.bam
+bam=${ASSEMBLY_MAPPING_FOLDER}hisat2/aligned_reads.bam
 
 # Make index of assembly file if not there:
 samtools faidx $ref
@@ -17,7 +17,7 @@ samtools view -Sbt ${ref}.fai $sam > $bam
 
 # SORT BAMS BY COORDINATES (PICARD)
 #-------------------------------------------------------------------------------
-bam_out=${ASSEMBLY_MAPPING_FOLDER}bowtie2/aligned_reads_sort.bam
+bam_out=${ASSEMBLY_MAPPING_FOLDER}hisat2/aligned_reads_sort.bam
 time srun --exclusive -c16 -n1 -N1 \
     java -jar ${jars}SortSam.jar \
     INPUT=$bam \
@@ -30,13 +30,13 @@ wait
 # REMOVE DUPLICATES (PICARD)
 #-------------------------------------------------------------------------------
 bam=$bam_out
-bam_out=${ASSEMBLY_MAPPING_FOLDER}bowtie2/aligned_reads_sort_nodup.bam
+bam_out=${ASSEMBLY_MAPPING_FOLDER}hisat2/aligned_reads_sort_nodup.bam
 
 time srun --exclusive -c16 -n1 -N1 \
     java -jar ${jars}MarkDuplicates.jar \
     INPUT=$bam \
     OUTPUT=$bam_out \
-    METRICS_FILE=${ASSEMBLY_MAPPING_FOLDER}bowtie2/dupstat \
+    METRICS_FILE=${ASSEMBLY_MAPPING_FOLDER}hisat2/dupstat \
     REMOVE_DUPLICATES=true \
     MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=900 &
 wait
@@ -44,7 +44,7 @@ wait
 # FIX MATE INFO (PICARD)
 #-------------------------------------------------------------------------------
 bam=$bam_out
-bam_out=${ASSEMBLY_MAPPING_FOLDER}bowtie2/aligned_reads_sort_nodup_mateok.bam
+bam_out=${ASSEMBLY_MAPPING_FOLDER}hisat2/aligned_reads_sort_nodup_mateok.bam
 time srun --exclusive -c16 -n1 -N1 \
     java -jar ${jars}FixMateInformation.jar \
     INPUT=$bam \
@@ -53,7 +53,7 @@ wait
 
 if [ "$MINIMAL_OUTPUT" = "TRUE" ]
 then
-	cd ${ASSEMBLY_MAPPING_FOLDER}bowtie2
+	cd ${ASSEMBLY_MAPPING_FOLDER}hisat2
 	rm aligned_reads_sort_nodup.bam
 	rm aligned_reads_sort.bam
 	rm aligned_reads.sam
