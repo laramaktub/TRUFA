@@ -1,4 +1,3 @@
-module load BLAT/35INTEL
 
 # IO:
 db=`basename $BLAT_READS_DB`

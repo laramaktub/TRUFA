@@ -1,5 +1,3 @@
-module load TRINITY_RNA_SEQ
-
 cd $ASSEMBLY_MAPPING_FOLDER
 mkdir bowtie
 

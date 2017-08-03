@@ -1,0 +1,7 @@
+a=set(['TRIM', 'BLAT_SCERE', 'BLAT_ECOLI', 'BLAT_CUSTOM_READS', 'CUTADAPT', 'BLAT_UNIVEC', 'DUP'])
+b=set(['TRIM', 'INTERPROSCAN', 'FASTQC1', 'DUP'])
+
+
+c=a&b
+
+print c

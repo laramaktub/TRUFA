@@ -1,6 +1,3 @@
-module load TRINITY_RNA_SEQ/r2013-11-10
-module load PYTHON
-module load RSEM
 
 echo `date +%F\ %H:%M:%S` "START RSEM" >> ${OUT_FOLDER}.LOG.txt
 
@@ -44,9 +41,12 @@ if [ ${#reads_files[@]} -eq 2 ]; then
 	--seqType fq \
 	--left $reads1 \
 	--right $reads2 \
-	--thread_count 16 \
-	--output_dir RSEM \
-	-- --bowtie-chunkmbs 1000
+	--est_method RSEM\
+        --aln_method bowtie\
+        --thread_count 16\ 
+        --output_dir RSEM\
+        --prep_reference
+#	--chunkmbs 1000
 #-- --fragment-length-max 500 >>> default in RSEM is 1000
 
     # Cleaning:
@@ -61,9 +61,14 @@ elif [ ${#reads_files[@]} -eq 1 ]; then
 	--transcripts $transcripts \
 	--seqType fq \
 	--single $reads_single \
-	--thread_count 16 \
-	--output_dir RSEM 
-#	-- --bowtie-chunkmbs 1000
+        --est_method RSEM\
+        --aln_method bowtie\ 
+        --thread_count 16\ 
+        --output_dir RSEM\ 
+        --prep_reference 
+
+#	--chunkmbs 1000
+
 #-- --fragment-length-max 500 >>> default in RSEM is 1000
     echo RSEM: R:$reads_single T:$transcripts PAR:$PARAM_RSEM >> ${OUT_FOLDER}.LOG.txt
 

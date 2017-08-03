@@ -18,7 +18,7 @@ time blastx \
     -evalue 1e-20 -num_threads 16 \
     -max_target_seqs 1 -outfmt 6
 
-time /software/applications/trinityrnaseq/v2.2.0/util/analyze_blastPlus_topHit_coverage.pl ${STAT_FOLDER}assembly_qc/blast_qc/blastx.outfmt6 $transcripts $BLAST_QUAL_DB
+time $TRINITY_HOME/util/analyze_blastPlus_topHit_coverage.pl ${STAT_FOLDER}assembly_qc/blast_qc/blastx.outfmt6 $transcripts $BLAST_QUAL_DB
 
 #### Basic statistics:
 

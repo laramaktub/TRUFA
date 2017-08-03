@@ -459,13 +459,8 @@ if soft_data.cleaning_progs & steps:
             env["BLAT_READS_DB"] = BLAST_DB_FOLDER + "univec/univec"
             env["BLAT_TYPE"] = "'-t=dna -q=dna'"
 
-            prepareScript("rblat_univec",
-                                        "cleaning/larablat.cmd",
-                                        dep,
-                                        folders_dict["OUT_FOLDER"],
-                                        READS_FILES_COUNT * 32, 1, "6:00:00", env)
             slurm_id = prepareAndSubmit("rblat_univec",
-                                        "dockers/cleaning/blat.cmd",
+                                        "cleaning/blat.cmd",
                                         dep,
                                         folders_dict["OUT_FOLDER"],
                                         READS_FILES_COUNT * 32, 1, "6:00:00", env)
@@ -483,12 +478,12 @@ if soft_data.cleaning_progs & steps:
             env["BLAT_TYPE"] = "'-t=dna -q=dna'"
 
             prepareScript("rblat_ecoli",
-                                        "cleaning/larablat.cmd",
+                                        "cleaning/blat.cmd",
                                         dep,
                                         folders_dict["OUT_FOLDER"],
                                         READS_FILES_COUNT * 32, 1, "6:00:00", env)
             slurm_id = prepareAndSubmit("rblat_ecoli",
-                                        "dockers/cleaning/blat.cmd",
+                                        "cleaning/blat.cmd",
                                         dep,
                                         folders_dict["OUT_FOLDER"],
                                         READS_FILES_COUNT * 32, 1, "6:00:00", env)
@@ -502,14 +497,13 @@ if soft_data.cleaning_progs & steps:
             env["BLAT_READS_DB"] = BLAST_DB_FOLDER + "S_cerevisiae_G/S_cerevisiae_G"
             env["BLAT_TYPE"] = "'-t=dna -q=dna'"
 
-            prepareScript("rblat_scere",
-                                        "cleaning/larablat.cmd",
+            slurm_id = prepareAndSubmit("rblat_scere",
+                                        "dockers/cleaning/blat.cmd",
                                         dep,
                                         folders_dict["OUT_FOLDER"],
                                         READS_FILES_COUNT * 32, 1, "6:00:00", env)
-
-            slurm_id = prepareAndSubmit("rblat_scere",
-                                        "dockers/cleaning/blat.cmd",
+            prepareScript("rblat_scere",
+                                        "cleaning/larablat.cmd",
                                         dep,
                                         folders_dict["OUT_FOLDER"],
                                         READS_FILES_COUNT * 32, 1, "6:00:00", env)
@@ -522,14 +516,13 @@ if soft_data.cleaning_progs & steps:
                 env["BLAT_READS_DB"] = DATA_FOLDER + db
                 env["BLAT_TYPE"] = "'-t=dna -q=dna'"
 
-                prepareScript("rblat_" + db,
-                                            "cleaning/larablat.cmd",
+                slurm_id = prepareAndSubmit("rblat_" + db,
+                                            "dockers/cleaning/blat.cmd",
                                             dep,
                                             folders_dict["OUT_FOLDER"],
                                             READS_FILES_COUNT * 32, 1, "6:00:00", env)
-
-                slurm_id = prepareAndSubmit("rblat_" + db,
-                                            "dockers/cleaning/blat.cmd",
+                prepareScript("rblat_" + db,
+                                            "cleaning/larablat.cmd",
                                             dep,
                                             folders_dict["OUT_FOLDER"],
                                             READS_FILES_COUNT * 32, 1, "6:00:00", env)
@@ -556,7 +549,7 @@ if soft_data.cleaning_progs & steps:
         dep.append(slurm_id)
 
         slurm_id = prepareAndSubmit("reads_removal",
-                                    "cleaning/reads_removal.cmd",
+                                    "cleaning/larareads_removal.cmd",
                                     dep,
                                     folders_dict["OUT_FOLDER"],
                                     1, 1, "3:00:00", env)
@@ -1074,190 +1067,6 @@ if soft_data.identify_progs & steps:
 
 
         
-#-------------------------------------------------------------------------------
-# EXPRESSION:
-#-------------------------------------------------------------------------------
-
-# If any programs from the expression part:
-if soft_data.expression_progs & steps:
-
-    # OUTPUT folder:
-    os.mkdir(folders_dict["EXPRESSION_FOLDER"])
-
-#-------------------------------------------------------------------------------
-    if "CUFFDIFF" in steps:
-
-        if "BOWTIE2" in steps:
-            # if bowtie already selected by the user
-            prepareScript("cuffdiff",
-                                        "expression/laracuffdiff.cmd",
-                                        expr_dep,
-                                        folders_dict["OUT_FOLDER"],
-                                        1, 16, "72:00:00", env)
-            slurm_id = prepareAndSubmit("cuffdiff",
-                                        "dockers/expression/cuffdiff.cmd",
-                                        expr_dep,
-                                        folders_dict["OUT_FOLDER"],
-                                        1, 16, "72:00:00", env)
-            slurm_ids.append( slurm_id )
-
-        else:
-            prepareScript("bowtie2",
-                                        "ass_map/larabowtie2.cmd",
-                                        dep,
-                                        folders_dict["OUT_FOLDER"],
-                                        1, 16, "72:00:00", env)
-            slurm_id = prepareAndSubmit("bowtie2",
-                                        "dockers/ass_map/bowtie2.cmd",
-                                        dep,
-                                        folders_dict["OUT_FOLDER"],
-                                        1, 16, "72:00:00", env)
-            slurm_ids.append( slurm_id )
-            expr_dep.append(slurm_id)
-
-            prepareScript("cuffdiff",
-                                        "expression/laracuffdiff.cmd",
-                                        expr_dep,
-                                        folders_dict["OUT_FOLDER"],
-                                        1, 16, "72:00:00", env)
-            slurm_id = prepareAndSubmit("cuffdiff",
-                                        "dockers/expression/cuffdiff.cmd",
-                                        expr_dep,
-                                        folders_dict["OUT_FOLDER"],
-                                        1, 16, "72:00:00", env)
-            slurm_ids.append( slurm_id )
-
-#-------------------------------------------------------------------------------
-    if "CUFFLINKS" in steps:
-                
-        if "BOWTIE2" in steps:
-            # if bowtie already selected by the user
-            prepareScript("cufflinks",
-                                        "expression/laracufflinks.cmd",
-                                        expr_dep,
-                                        folders_dict["OUT_FOLDER"],
-                                        1, 16, "72:00:00", env,
-                                        folders_dict["STAT_FOLDER"] +
-                                        "expression_stats")
-            slurm_id = prepareAndSubmit("cufflinks",
-                                        "dockers/expression/cufflinks.cmd",
-                                        expr_dep,
-                                        folders_dict["OUT_FOLDER"],
-                                        1, 16, "72:00:00", env,
-                                        folders_dict["STAT_FOLDER"] +
-                                        "expression_stats")
-            slurm_ids.append( slurm_id )
-
-        else:
-            slurm_id = prepareAndSubmit("bowtie2",
-                                         "ass_map/bowtie2.cmd",
-                                         dep,
-                                         folders_dict["OUT_FOLDER"],
-                                         1, 16, "72:00:00", env)
-            slurm_ids.append( slurm_id )
-            expr_dep.append(slurm_id)
-
-            prepareScript("cufflinks",
-                                        "expression/laracufflinks.cmd",
-                                        expr_dep,
-                                        folders_dict["OUT_FOLDER"],
-                                        1, 16, "72:00:00", env,
-                                        folders_dict["STAT_FOLDER"] +
-                                        "expression_stats")
-            slurm_id = prepareAndSubmit("cufflinks",
-                                        "dockers/expression/cufflinks.cmd",
-                                        expr_dep,
-                                        folders_dict["OUT_FOLDER"],
-                                        1, 16, "72:00:00", env,
-                                        folders_dict["STAT_FOLDER"] +
-                                        "expression_stats")
-            slurm_ids.append( slurm_id )
-            
-#-------------------------------------------------------------------------------
-    if "RSEM" in steps:
-
-        prepareScript("RSEM",
-                                    "expression/laraRSEM.cmd",
-                                    dep,
-                                    folders_dict["OUT_FOLDER"],
-                                    1, 16, "72:00:00", env,
-                                    folders_dict["STAT_FOLDER"] +
-                                    "expression_stats")
-        slurm_id = prepareAndSubmit("RSEM",
-                                    "dockers/expression/RSEM.cmd",
-                                    dep,
-                                    folders_dict["OUT_FOLDER"],
-                                    1, 16, "72:00:00", env,
-                                    folders_dict["STAT_FOLDER"] +
-                                    "expression_stats")
-        slurm_ids.append(slurm_id)
-
-#-------------------------------------------------------------------------------
-    if "EXPRESS" in steps:
-
-        if "BOWTIE2" in steps:
-            prepareScript("express",
-                                        "expression/laraexpress.cmd",
-                                        expr_dep,
-                                        folders_dict["OUT_FOLDER"],
-                                        1, 1, "72:00:00", env,
-                                        folders_dict["STAT_FOLDER"] +
-                                        "expression_stats")
-            slurm_id = prepareAndSubmit("express",
-                                        "dockers/expression/express.cmd",
-                                        expr_dep,
-                                        folders_dict["OUT_FOLDER"],
-                                        1, 1, "72:00:00", env,
-                                        folders_dict["STAT_FOLDER"] +
-                                        "expression_stats")
-            slurm_ids.append(slurm_id)
-        else:
-            # Perform bowtie and post processing
-            prepareScript("bowtie2",
-                                        "ass_map/larabowtie2.cmd",
-                                        dep,
-                                        folders_dict["OUT_FOLDER"],
-                                        1, 16, "24:00:00", env)
-            slurm_id = prepareAndSubmit("bowtie2",
-                                        "dockers/ass_map/bowtie2.cmd",
-                                        dep,
-                                        folders_dict["OUT_FOLDER"],
-                                        1, 16, "24:00:00", env)
-            slurm_ids.append( slurm_id )
-            expr_dep.append(slurm_id)
-            
-            # Bam postprocessing
-            prepareScript("bam_postprocess",
-                                        "ass_map/larabam_postproc.cmd",
-                                        expr_dep,
-                                        folders_dict["OUT_FOLDER"],
-                                        1, 16, "24:00:00", env)
-            slurm_id = prepareAndSubmit("bam_postprocess",
-                                        "dockers/ass_map/bam_postproc.cmd",
-                                        expr_dep,
-                                        folders_dict["OUT_FOLDER"],
-                                        1, 16, "24:00:00", env)
-            slurm_ids.append( slurm_id )
-            expr_dep.append(slurm_id)
-
-            prepareScript("express",
-                                        "expression/laraexpress.cmd",
-                                        expr_dep,
-                                        folders_dict["OUT_FOLDER"],
-                                        1, 1, "72:00:00", env,
-                                        folders_dict["STAT_FOLDER"] +
-                                        "expression_stats")
-            slurm_id = prepareAndSubmit("express",
-                                        "dockers/expression/express.cmd",
-                                        expr_dep,
-                                        folders_dict["OUT_FOLDER"],
-                                        1, 1, "72:00:00", env,
-                                        folders_dict["STAT_FOLDER"] +
-                                        "expression_stats")
-            slurm_ids.append(slurm_id)
-
-#-------------------------------------------------------------------------------
-#-------------------------------------------------------------------------------
 # print list of SLURM IDS:
 if not DEBUG:
     print "slurmids: " + ",".join(slurm_ids)

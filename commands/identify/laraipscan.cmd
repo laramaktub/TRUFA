@@ -12,7 +12,7 @@ mkdir ../out
 
 for file in `ls`
 do
-    time srun --exclusive -n1 -N1 interproscan.sh -t n -i $file -o ../out/$file.out -f xml &
+    interproscan.sh -t n -i $file -o ../out/$file.out -f xml &
 done
 
 # -t n is for nucleotide input

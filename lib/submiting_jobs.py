@@ -49,14 +49,11 @@ def sort_parameters(usr_para_dict):
     # Special case for the DUP_DEREP parameter:
     derep_keys = [x for x in usr_para_dict if x.startswith("DUP_DEREP")]
     derep_param = ""
-
     for key in derep_keys:
         if usr_para_dict[key] == "on":
             derep_param += key[-1] # the last character is the number for the opt.
-        del usr_para_dict[key]
-
+            del usr_para_dict[key]
     usr_para_dict["DUP_FILTER"] = derep_param
-
     # get type of input and input file(s):
     input_type = usr_para_dict["input_type"]
     input_dict["input_type"] = input_type
@@ -66,7 +63,7 @@ def sort_parameters(usr_para_dict):
                     for x in usr_para_dict
                     if x.startswith("file_read")]
     input_dict["reads_files"] = reads_files
-    
+
     if "file_ass" in usr_para_dict:
         assembly_file = usr_para_dict["file_ass"]
         input_dict["assembly_file"] = assembly_file
@@ -148,7 +145,6 @@ def sort_parameters(usr_para_dict):
     params = usr_para_dict.keys()
     para_groups = [ x.split("_")[0] for x in params ]   
     para_groups = set(para_groups)
-
     for param in usr_para_dict:
         for para_group in para_groups:
             if param.startswith(para_group):
@@ -156,13 +152,11 @@ def sort_parameters(usr_para_dict):
                     args_dict[para_group] += PARAM_DICT[param] + " " + usr_para_dict[param] + " "
                 else:
                     args_dict[para_group] = PARAM_DICT[param] + " " + usr_para_dict[param] + " "
-
     # Adding ' ' for bash export:
     for k in args_dict:
         args_dict[k] = "'" + args_dict[k] + "'"
-                    
-    input_dict["args_dict"] = args_dict
     
+    input_dict["args_dict"] = args_dict
     return input_dict
         
 #-------------------------------------------------------------------------------
@@ -208,17 +202,15 @@ def make_and_submit_job(OUT_FOLDER, cmd_file, job_name,
 
     STATUS: WORKING
     """
-
+    print(dep)
     import tempfile
     cache_path = OUT_FOLDER + ".cache/"
     log_path = cache_path + job_name + "%j"
     tmp_path = cache_path + "tmp/"
     os.chdir(cache_path)
-    
     # Preparing temporary files for submission:
     fd, cmd_path = tempfile.mkstemp(dir="tmp",prefix=job_name + "_")
     os.chmod(cmd_path, 0644)
-
     with open(cmd_path, "w") as tmp:
         # Preparing the slurm header
         tmp.write("""\
@@ -231,7 +223,6 @@ def make_and_submit_job(OUT_FOLDER, cmd_file, job_name,
 #@ cpus_per_task = {3}
 #@ wall_clock_limit = {4}
 \n""".format(job_name, log_path, total_tasks, cpus_per_task, wall_clock_limit))
-
     # Adding the environement:
         tmp.write("#" + "-"*34 + "ENVIRONMENT" + "-"*34 + "\n")
         
@@ -240,12 +231,10 @@ def make_and_submit_job(OUT_FOLDER, cmd_file, job_name,
 
         tmp.write("#" + "-"*79 + "\n")
 
-        
     # Adding the actual job part (from the command file without header):
         with open(cmd_file) as f:
             for line in f:
                 tmp.write(line)
-
     # Submit the job
     job_file = os.path.basename(cmd_path)
     if dep:
@@ -254,16 +243,20 @@ def make_and_submit_job(OUT_FOLDER, cmd_file, job_name,
         dep_str = ""
 
     command = "ssh genorama@altamira1.ifca.es 'cd {0} ; mnsubmit --reservation=master_2017 {1} {2}'".format(tmp_path, dep_str, job_file)
+    debug=False
     if debug == True:
         print "DEBUG: " + command
 
     else:
+        print "entra en el else"
         job = subprocess.Popen(command, shell = True, stdout=subprocess.PIPE, env=env)
-
+        
         # To get the job ID for dependencies
         out, err = job.communicate()
         job_id = out.split()[3]
         return job_id
+    
+
 
     
 #===========================================================================
@@ -276,6 +269,7 @@ def make_script(OUT_FOLDER, cmd_file, job_name,
     import tempfile
     cache_path = OUT_FOLDER + ".cache/"
     log_path = cache_path + job_name + "%j"
+    print("jobname ", job_name)
     tmp_path = cache_path + "tmp/"
     os.chdir(cache_path)
     # Preparing temporary files for submission:

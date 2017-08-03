@@ -465,7 +465,7 @@ if soft_data.cleaning_progs & steps:
         # Set input for next step:
         env["READS_FILES"] = env["READS_OUT"]
 
-
+print("Entra aqui!!!!!!!!!!!!!")
 #-------------------------------------------------------------------------------
 # Pointing to clean reads files
 # If a cleaning has been first performed have to add the CLEANING_FOLDER PATH

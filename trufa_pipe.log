@@ -52,3 +52,388 @@
 20170530 11:52:56 -INFO- Start server side
 20170530 13:47:41 -INFO- Start server side
 20170530 13:47:46 -ERROR- [Errno 2] No such file or directory: '/home/ubuntu/server_side/commands/ass_map/laracegma.cmd'
+20170607 12:48:50 -INFO- Start server side
+20170607 12:48:50 -ERROR- sequence item 0: expected string, NoneType found
+20170607 12:49:49 -INFO- Start server side
+20170607 12:49:50 -ERROR- sequence item 0: expected string, NoneType found
+20170607 12:50:56 -INFO- Start server side
+20170607 12:50:57 -ERROR- sequence item 0: expected string, NoneType found
+20170607 12:51:34 -INFO- Start server side
+20170607 12:51:35 -ERROR- sequence item 0: expected string, NoneType found
+20170607 12:52:24 -INFO- Start server side
+20170607 12:52:24 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 12:52:55 -INFO- Start server side
+20170607 12:52:55 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 12:53:05 -INFO- Start server side
+20170607 12:53:06 -ERROR- sequence item 0: expected string, NoneType found
+20170607 12:54:01 -INFO- Start server side
+20170607 12:54:05 -ERROR- sequence item 0: expected string, NoneType found
+20170607 12:56:39 -INFO- Start server side
+20170607 12:56:39 -ERROR- sequence item 0: expected string, NoneType found
+20170607 12:57:42 -INFO- Start server side
+20170607 12:57:43 -ERROR- sequence item 0: expected string, NoneType found
+20170607 12:59:12 -INFO- Start server side
+20170607 12:59:12 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 12:59:17 -INFO- Start server side
+20170607 12:59:18 -ERROR- sequence item 0: expected string, NoneType found
+20170607 13:04:26 -INFO- Start server side
+20170607 13:04:27 -ERROR- sequence item 0: expected string, NoneType found
+20170607 13:05:53 -INFO- Start server side
+20170607 13:05:54 -ERROR- sequence item 0: expected string, NoneType found
+20170607 13:06:36 -INFO- Start server side
+20170607 13:06:37 -ERROR- sequence item 0: expected string, NoneType found
+20170607 13:07:00 -INFO- Start server side
+20170607 13:07:00 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 13:07:04 -INFO- Start server side
+20170607 13:07:05 -ERROR- sequence item 0: expected string, NoneType found
+20170607 13:07:08 -INFO- Start server side
+20170607 13:07:08 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 13:13:06 -INFO- Start server side
+20170607 13:13:36 -INFO- Start server side
+20170607 13:13:36 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 13:13:46 -INFO- Start server side
+20170607 13:13:50 -ERROR- sequence item 0: expected string, NoneType found
+20170607 13:14:23 -INFO- Start server side
+20170607 13:14:23 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 13:14:27 -INFO- Start server side
+20170607 13:14:28 -ERROR- sequence item 0: expected string, NoneType found
+20170607 13:15:44 -INFO- Start server side
+20170607 13:15:44 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 13:15:47 -INFO- Start server side
+20170607 13:15:48 -ERROR- sequence item 0: expected string, NoneType found
+20170607 13:21:22 -INFO- Start server side
+20170607 13:21:22 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 13:21:26 -INFO- Start server side
+20170607 13:21:27 -ERROR- sequence item 0: expected string, NoneType found
+20170607 13:24:48 -INFO- Start server side
+20170607 13:24:49 -ERROR- sequence item 0: expected string, NoneType found
+20170607 13:25:57 -INFO- Start server side
+20170607 13:25:58 -ERROR- sequence item 0: expected string, NoneType found
+20170607 13:26:21 -INFO- Start server side
+20170607 13:26:21 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 13:26:25 -INFO- Start server side
+20170607 13:26:25 -ERROR- sequence item 0: expected string, NoneType found
+20170607 13:27:01 -INFO- Start server side
+20170607 13:27:01 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 13:27:11 -INFO- Start server side
+20170607 13:27:12 -ERROR- sequence item 0: expected string, NoneType found
+20170607 13:27:22 -INFO- Start server side
+20170607 13:27:22 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 13:27:25 -INFO- Start server side
+20170607 13:27:25 -ERROR- sequence item 0: expected string, NoneType found
+20170607 13:32:12 -INFO- Start server side
+20170607 13:32:12 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 13:32:28 -INFO- Start server side
+20170607 13:32:28 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 13:32:32 -INFO- Start server side
+20170607 13:32:32 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 13:32:37 -INFO- Start server side
+20170607 13:32:37 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 13:33:29 -INFO- Start server side
+20170607 13:33:56 -INFO- Start server side
+20170607 13:33:56 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 13:35:27 -INFO- Start server side
+20170607 13:35:27 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 13:40:27 -INFO- Start server side
+20170607 13:40:27 -ERROR- sequence item 0: expected string, NoneType found
+20170607 13:49:09 -INFO- Start server side
+20170607 13:49:09 -ERROR- sequence item 0: expected string, NoneType found
+20170607 18:20:04 -INFO- Start server side
+20170607 18:20:04 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 18:20:20 -INFO- Start server side
+20170607 18:20:20 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 18:21:33 -INFO- Start server side
+20170607 18:21:33 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 18:21:52 -INFO- Start server side
+20170607 18:21:53 -ERROR- sequence item 0: expected string, NoneType found
+20170607 18:25:05 -INFO- Start server side
+20170607 18:25:06 -ERROR- sequence item 0: expected string, NoneType found
+20170607 18:27:33 -INFO- Start server side
+20170607 18:27:33 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170607 18:27:37 -INFO- Start server side
+20170607 18:27:38 -ERROR- sequence item 0: expected string, NoneType found
+20170608 09:53:00 -INFO- Start server side
+20170608 09:53:00 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170608 09:53:58 -INFO- Start server side
+20170608 09:53:59 -ERROR- sequence item 0: expected string, NoneType found
+20170608 09:59:40 -INFO- Start server side
+20170608 09:59:41 -ERROR- sequence item 0: expected string, NoneType found
+20170608 10:02:33 -INFO- Start server side
+20170608 10:02:33 -ERROR- sequence item 0: expected string, NoneType found
+20170608 10:03:01 -INFO- Start server side
+20170608 10:03:01 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170608 10:03:10 -INFO- Start server side
+20170608 10:03:10 -ERROR- sequence item 0: expected string, NoneType found
+20170608 10:03:36 -INFO- Start server side
+20170608 10:03:37 -ERROR- sequence item 0: expected string, NoneType found
+20170608 10:08:56 -INFO- Start server side
+20170608 10:08:57 -ERROR- sequence item 0: expected string, NoneType found
+20170608 10:09:25 -INFO- Start server side
+20170608 10:09:26 -ERROR- sequence item 0: expected string, NoneType found
+20170608 10:10:19 -INFO- Start server side
+20170608 10:10:19 -ERROR- sequence item 0: expected string, NoneType found
+20170608 10:16:47 -INFO- Start server side
+20170608 10:16:47 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170608 10:16:54 -INFO- Start server side
+20170608 10:16:55 -ERROR- sequence item 0: expected string, NoneType found
+20170608 10:24:24 -INFO- Start server side
+20170608 10:24:24 -ERROR- sequence item 0: expected string, NoneType found
+20170608 10:25:52 -INFO- Start server side
+20170608 10:25:52 -ERROR- sequence item 0: expected string, NoneType found
+20170608 10:28:39 -INFO- Start server side
+20170608 10:28:39 -ERROR- sequence item 0: expected string, NoneType found
+20170608 10:36:36 -INFO- Start server side
+20170608 10:36:37 -ERROR- sequence item 0: expected string, NoneType found
+20170608 11:11:42 -INFO- Start server side
+20170608 11:11:43 -ERROR- sequence item 0: expected string, NoneType found
+20170608 11:19:46 -INFO- Start server side
+20170608 11:19:46 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170608 11:19:52 -INFO- Start server side
+20170608 11:19:52 -ERROR- sequence item 0: expected string, NoneType found
+20170608 11:30:32 -INFO- Start server side
+20170608 11:30:33 -ERROR- sequence item 0: expected string, NoneType found
+20170608 11:31:03 -INFO- Start server side
+20170608 11:31:03 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170608 11:31:10 -INFO- Start server side
+20170608 11:31:10 -ERROR- sequence item 0: expected string, NoneType found
+20170608 11:35:50 -INFO- Start server side
+20170608 11:35:51 -ERROR- sequence item 0: expected string, NoneType found
+20170608 11:36:10 -INFO- Start server side
+20170608 11:36:11 -ERROR- sequence item 0: expected string, NoneType found
+20170608 11:37:55 -INFO- Start server side
+20170608 11:37:56 -ERROR- sequence item 0: expected string, NoneType found
+20170608 11:39:54 -INFO- Start server side
+20170608 11:39:54 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170608 11:39:58 -INFO- Start server side
+20170608 11:39:58 -ERROR- sequence item 0: expected string, NoneType found
+20170608 11:43:15 -INFO- Start server side
+20170608 11:43:15 -ERROR- sequence item 0: expected string, NoneType found
+20170608 11:46:03 -INFO- Start server side
+20170608 11:46:03 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170608 11:46:08 -INFO- Start server side
+20170608 11:46:08 -ERROR- sequence item 0: expected string, NoneType found
+20170608 11:47:27 -INFO- Start server side
+20170608 11:47:28 -ERROR- sequence item 0: expected string, NoneType found
+20170608 12:34:10 -INFO- Start server side
+20170608 12:34:10 -ERROR- sequence item 0: expected string, NoneType found
+20170608 12:38:04 -INFO- Start server side
+20170608 12:38:04 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170608 12:38:09 -INFO- Start server side
+20170608 12:38:09 -ERROR- sequence item 0: expected string, NoneType found
+20170608 12:38:51 -INFO- Start server side
+20170608 12:38:51 -ERROR- sequence item 0: expected string, NoneType found
+20170608 12:41:33 -INFO- Start server side
+20170608 12:41:33 -ERROR- sequence item 0: expected string, NoneType found
+20170608 12:47:22 -INFO- Start server side
+20170608 12:47:23 -ERROR- sequence item 0: expected string, NoneType found
+20170608 12:47:37 -INFO- Start server side
+20170608 12:47:37 -ERROR- sequence item 0: expected string, NoneType found
+20170608 12:48:50 -INFO- Start server side
+20170608 12:48:50 -ERROR- sequence item 0: expected string, NoneType found
+20170608 12:49:39 -INFO- Start server side
+20170608 12:49:39 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170608 12:49:43 -INFO- Start server side
+20170608 12:49:43 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170608 12:49:49 -INFO- Start server side
+20170608 12:49:50 -ERROR- sequence item 0: expected string, NoneType found
+20170608 12:51:30 -INFO- Start server side
+20170608 12:51:30 -ERROR- sequence item 0: expected string, NoneType found
+20170608 12:52:04 -INFO- Start server side
+20170608 12:52:04 -ERROR- sequence item 0: expected string, NoneType found
+20170608 12:52:36 -INFO- Start server side
+20170608 12:52:36 -ERROR- sequence item 0: expected string, NoneType found
+20170608 12:52:55 -INFO- Start server side
+20170608 12:52:55 -ERROR- sequence item 0: expected string, NoneType found
+20170608 12:54:14 -INFO- Start server side
+20170608 12:54:14 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170608 12:54:18 -INFO- Start server side
+20170608 12:54:18 -ERROR- sequence item 0: expected string, NoneType found
+20170608 12:55:19 -INFO- Start server side
+20170608 12:55:19 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170608 12:55:24 -INFO- Start server side
+20170608 12:55:25 -ERROR- sequence item 0: expected string, NoneType found
+20170608 12:56:10 -INFO- Start server side
+20170608 12:56:11 -ERROR- sequence item 0: expected string, NoneType found
+20170608 12:58:27 -INFO- Start server side
+20170608 12:58:27 -ERROR- sequence item 0: expected string, NoneType found
+20170608 13:00:58 -INFO- Start server side
+20170608 13:01:01 -INFO- Start server side
+20170608 13:01:01 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170608 13:01:04 -INFO- Start server side
+20170608 13:01:05 -ERROR- sequence item 0: expected string, NoneType found
+20170608 13:02:10 -INFO- Start server side
+20170608 13:02:17 -ERROR- sequence item 0: expected string, NoneType found
+20170608 13:05:40 -INFO- Start server side
+20170608 13:05:40 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170608 13:05:47 -INFO- Start server side
+20170608 13:05:48 -ERROR- sequence item 0: expected string, NoneType found
+20170608 13:06:25 -INFO- Start server side
+20170608 13:06:25 -ERROR- sequence item 0: expected string, NoneType found
+20170608 13:09:25 -INFO- Start server side
+20170608 13:09:26 -ERROR- sequence item 0: expected string, NoneType found
+20170608 13:10:47 -INFO- Start server side
+20170608 13:10:48 -ERROR- sequence item 0: expected string, NoneType found
+20170608 13:11:35 -INFO- Start server side
+20170608 13:11:36 -ERROR- sequence item 0: expected string, NoneType found
+20170608 13:12:27 -INFO- Start server side
+20170608 13:12:27 -ERROR- sequence item 0: expected string, NoneType found
+20170608 13:12:50 -INFO- Start server side
+20170608 13:12:50 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170608 13:12:53 -INFO- Start server side
+20170608 13:12:54 -ERROR- sequence item 0: expected string, NoneType found
+20170608 13:14:03 -INFO- Start server side
+20170608 13:14:04 -ERROR- sequence item 0: expected string, NoneType found
+20170608 13:14:35 -INFO- Start server side
+20170608 13:14:36 -ERROR- sequence item 0: expected string, NoneType found
+20170608 13:20:42 -INFO- Start server side
+20170608 13:20:42 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170608 13:20:46 -INFO- Start server side
+20170608 13:25:56 -INFO- Start server side
+20170608 13:26:51 -INFO- Start server side
+20170608 13:27:23 -INFO- Start server side
+20170608 13:29:35 -ERROR- list index out of range
+20170608 16:29:36 -INFO- Start server side
+20170608 16:33:42 -INFO- Start server side
+20170608 16:34:43 -INFO- Start server side
+20170608 17:00:23 -INFO- Start server side
+20170608 17:00:44 -INFO- Start server side
+20170608 17:00:44 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170608 17:00:52 -INFO- Start server side
+20170608 17:01:19 -INFO- Start server side
+20170608 17:01:19 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170608 17:01:23 -INFO- Start server side
+20170608 17:02:07 -INFO- Start server side
+20170608 17:17:23 -INFO- Start server side
+20170608 17:22:54 -INFO- Start server side
+20170609 10:44:11 -INFO- Start server side
+20170609 10:48:23 -INFO- Start server side
+20170609 10:54:35 -INFO- Start server side
+20170703 16:59:24 -INFO- Start server side
+20170703 16:59:33 -INFO- Start server side
+20170703 17:00:38 -INFO- Start server side
+20170703 17:01:21 -INFO- Start server side
+20170703 17:02:32 -INFO- Start server side
+20170703 17:09:22 -INFO- Start server side
+20170718 09:30:05 -INFO- Start server side
+20170718 09:30:05 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170718 09:30:17 -INFO- Start server side
+20170718 09:35:18 -INFO- Start server side
+20170718 09:35:48 -INFO- Start server side
+20170718 09:36:42 -INFO- Start server side
+20170719 12:03:25 -INFO- Start server side
+20170719 12:08:53 -INFO- Start server side
+20170719 12:10:00 -INFO- Start server side
+20170719 12:21:02 -INFO- Start server side
+20170719 12:43:31 -INFO- Start server side
+20170719 12:45:44 -ERROR- list index out of range
+20170719 13:01:17 -INFO- Start server side
+20170719 13:05:41 -ERROR- list index out of range
+20170719 13:07:36 -INFO- Start server side
+20170719 13:09:47 -ERROR- list index out of range
+20170720 09:57:14 -INFO- Start server side
+20170720 09:57:20 -ERROR- [Errno 2] No such file or directory: '/home/ubuntu/server_side/commands/ass_map/laracegma.cmd'
+20170720 10:13:01 -INFO- Start server side
+20170720 11:34:08 -INFO- Start server side
+20170720 12:58:26 -INFO- Start server side
+20170720 13:00:21 -INFO- Start server side
+20170720 13:00:21 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_4/'
+20170720 13:34:33 -INFO- Start server side
+20170720 16:36:19 -INFO- Start server side
+20170720 16:39:21 -INFO- Start server side
+20170720 16:40:48 -ERROR- list index out of range
+20170720 16:41:13 -INFO- Start server side
+20170720 16:42:37 -ERROR- list index out of range
+20170720 16:45:38 -INFO- Start server side
+20170720 16:45:38 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_9/'
+20170720 16:46:17 -INFO- Start server side
+20170720 16:48:30 -ERROR- list index out of range
+20170720 18:02:34 -INFO- Start server side
+20170720 18:04:45 -ERROR- list index out of range
+20170720 18:13:57 -INFO- Start server side
+20170720 18:16:10 -ERROR- list index out of range
+20170720 18:31:42 -INFO- Start server side
+20170720 18:33:54 -ERROR- list index out of range
+20170720 18:35:05 -INFO- Start server side
+20170720 18:40:18 -INFO- Start server side
+20170720 20:55:04 -INFO- Start server side
+20170720 20:57:25 -ERROR- list index out of range
+20170721 09:29:46 -INFO- Start server side
+20170721 09:33:41 -INFO- Start server side
+20170721 09:53:05 -INFO- Start server side
+20170721 09:59:31 -INFO- Start server side
+20170721 10:00:51 -INFO- Start server side
+20170721 10:05:06 -INFO- Start server side
+20170721 10:05:06 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/'
+20170721 10:05:24 -INFO- Start server side
+20170721 10:12:37 -INFO- Start server side
+20170721 10:19:01 -INFO- Start server side
+20170721 10:24:50 -INFO- Start server side
+20170721 10:38:32 -INFO- Start server side
+20170721 10:42:02 -INFO- Start server side
+20170721 10:42:47 -INFO- Start server side
+20170721 10:50:21 -INFO- Start server side
+20170721 11:59:08 -INFO- Start server side
+20170721 12:02:24 -INFO- Start server side
+20170721 12:12:08 -INFO- Start server side
+20170721 12:14:53 -INFO- Start server side
+20170721 13:38:05 -INFO- Start server side
+20170721 13:38:05 -ERROR- [Errno 13] Permission denied: '/gpfs/res_projects/cvcv/webserver/users'
+20170726 10:27:07 -INFO- Start server side
+20170726 10:36:51 -INFO- Start server side
+20170726 10:40:12 -INFO- Start server side
+20170726 10:44:46 -INFO- Start server side
+20170726 10:48:56 -INFO- Start server side
+20170726 12:18:04 -INFO- Start server side
+20170726 12:18:06 -INFO- Start server side
+20170726 12:20:15 -ERROR- list index out of range
+20170726 12:25:18 -INFO- Start server side
+20170726 12:30:40 -INFO- Start server side
+20170726 12:32:41 -INFO- Start server side
+20170726 12:46:21 -INFO- Start server side
+20170726 13:10:40 -INFO- Start server side
+20170726 13:11:53 -ERROR- list index out of range
+20170726 14:25:21 -INFO- Start server side
+20170726 14:25:21 -ERROR- [Errno 2] No such file or directory: '/home/ubuntu/server_side/commands/dockers/identify/splitting.cmd'
+20170726 14:25:40 -INFO- Start server side
+20170726 14:25:41 -ERROR- [Errno 2] No such file or directory: '/home/ubuntu/server_side/commands/dockers/identify/splitting.cmd'
+20170727 12:14:43 -INFO- Start server side
+20170727 12:14:44 -ERROR- [Errno 2] No such file or directory: '/home/ubuntu/server_side/commands/dockers/identify/splitting.cmd'
+20170727 12:25:13 -INFO- Start server side
+20170727 12:25:13 -ERROR- [Errno 2] No such file or directory: '/home/ubuntu/server_side/commands/dockers/identify/splitting.cmd'
+20170727 12:29:36 -INFO- Start server side
+20170727 12:29:38 -ERROR- [Errno 2] No such file or directory: '/home/ubuntu/server_side/commands/dockers/identify/hmmer_scan.cmd'
+20170727 12:43:07 -INFO- Start server side
+20170727 12:43:11 -ERROR- list index out of range
+20170727 12:49:17 -INFO- Start server side
+20170727 12:49:17 -ERROR- [Errno 2] No such file or directory: '/home/ubuntu/server_side/commands/dockers/identify/splitting.cmd'
+20170727 12:51:17 -INFO- Start server side
+20170727 12:51:17 -ERROR- [Errno 2] No such file or directory: '/home/ubuntu/server_side/commands/dockers/identify/splitting.cmd'
+20170727 12:54:50 -INFO- Start server side
+20170727 12:58:54 -INFO- Start server side
+20170727 12:58:55 -ERROR- [Errno 2] No such file or directory: '/home/ubuntu/server_side/commands/dockers/identify/splitting.cmd'
+20170727 13:04:26 -INFO- Start server side
+20170727 13:06:42 -ERROR- list index out of range
+20170727 13:15:29 -INFO- Start server side
+20170727 13:17:45 -ERROR- list index out of range
+20170727 13:24:24 -INFO- Start server side
+20170727 13:26:36 -ERROR- list index out of range
+20170727 13:34:39 -INFO- Start server side
+20170727 13:45:49 -INFO- Start server side
+20170727 13:48:00 -ERROR- list index out of range
+20170727 13:50:50 -INFO- Start server side
+20170727 18:08:26 -INFO- Start server side
+20170731 12:50:25 -INFO- Start server side
+20170731 12:58:27 -INFO- Start server side
+20170731 13:00:22 -INFO- Start server side
+20170731 13:00:38 -ERROR- list index out of range
+20170731 13:20:30 -INFO- Start server side
+20170731 13:22:41 -ERROR- list index out of range
+20170731 13:33:22 -INFO- Start server side
+20170731 13:34:59 -INFO- Start server side
+20170731 17:06:33 -INFO- Start server side
+20170731 17:46:15 -INFO- Start server side
+20170731 18:48:14 -INFO- Start server side
+20170731 18:52:55 -INFO- Start server side
+20170801 10:37:38 -INFO- Start server side
+20170801 18:41:26 -INFO- Start server side
+20170802 16:19:11 -INFO- Start server side

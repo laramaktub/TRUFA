@@ -11,7 +11,7 @@ cd blat_transcripts/queries
 
 for file in `ls`
 do
-    time srun --exclusive -n1 -N1 -c1 blat $BLAT_TYPE -out=blast8 \
+    blat $BLAT_TYPE -out=blast8 \
 	$file $BLAT_CONTIGS_DB ../$db/$file.b8 &
 
 # To add when it will not take ages to run

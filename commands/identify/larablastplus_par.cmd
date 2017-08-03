@@ -28,7 +28,7 @@ do
     echo BLASTING $q
     echo OUTPUT IN $out
     
-    time srun --exclusive -N1 -n1 blastx \
+    blastx \
     	-query $q -db $db \
     	-out $out -evalue 1e-6 -num_threads 16 \
     	-outfmt 5 \

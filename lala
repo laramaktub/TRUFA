@@ -1,0 +1,21 @@
+{'TRIN_MIN_ISO': '--min_iso_ratio', 'TRIM_QUAL_THRE': '-min_qual_score', 'TRIN_MAX_PATH_NODE': '', 'TRIM_QUAL_STEP': '-trim_qual_step', 'BLAT_STEP': '-stepSize', 'BLAST_EXT_COST': '-E', 'BLAST_PENALTY': '-q', 'XBLAST_WORD_SZ': '-W', 'CUTADAPT_ADAPT2': '-b', 'BLAST_E_VAL': '-e', 'TRIN_JAC_CLIP': '--jaccard_clip', 'XBLAT_MIN_ID': '-minIdentity', 'XBLAT_MAX_GAP': '-maxGap', 'BOW1_MAX_INS': '-X', 'XBLAT_ONE_OFF': '-oneOff', 'BOW1_MAX_MIS': '-n', 'TRIM_CPLEX_MET': '-lc_method', 'BLAT_TILE': '-tileSize', 'BOW2_MININS': '--minins', 'XBLAST_EXT_COST': '-E', 'EXPR_FRAG_LEN_MEAN': '-m', 'BLAT_MIN_SCORE': '-minScore', 'TRIN_GRP_DIST': '--group_pairs_distance', 'TRIM_CPLEX_THRE': '-lc_threshold', 'BOW2_MODE': '', 'TRIN_GLUE_FACT': '--glue_factor', 'EXPR_FRAG_LEN_SD': '-s', 'CDHITEST_IDT': '-c', 'CUTADAPT_ADAPT1': '-b', 'TRIM_PHRED64': '-phred64', 'TRIM_MAX_LGTH': '-max_len', 'EXPR_FR_STRD': '', 'BOW1_TRY_HARD': '-y', 'DUP_FILTER': '-derep', 'TRIN_MIN_KMER_COV': '--min_kmer_cov', 'TRIM_3_BP': '-trim_right', 'TRIM_MIN_LGTH': '-min_len', 'TRIM_5_BP': '-trim_left', 'BLAT_MIN_ID': '-minIdentity', 'EXPR_RF_STRD': '', 'EXPR_F_STRD': '', 'BLAT_ONE_OFF': '-oneOff', 'BOW1_MATES_ALI': '', 'XBLAST_MAX_TARGET': '-K', 'BLAT_MIN_MATCH': '-minMatch', 'BLAT_MAX_GAP': '-maxGap', 'XBLAT_STEP': '-stepSize', 'XBLAT_TILE': '-tileSize', 'TRIN_SS_LIB': '--SS_lib_type', 'XBLAT_MIN_MATCH': '-minMatch', 'EXPR_LIB_SIZE': '--library-size', 'BOW1_SEED_LGTH': '-l', 'EXPR_R_STRD': '', 'TRIM_QUAL_5': '-trim_qual_left', 'XBLAST_E_VAL': '-e', 'TRIN_MIN_GLUE': '--min_glue', 'BLAST_REWARD': '-r', 'TRIM_QUAL_3': '-trim_qual_right', 'BOW2_MAXINS': '--maxins', 'TRIM_QUAL_WIN': '-trim_qual_window', 'EXPR_MAX_INDEL': '--max-indel-size', 'BLAST_MAX_TARGET': '-K', 'BOW1_NO_MAQ': '--nomaqround', 'TRIN_REINF_DIST': '--path_reinforcement_distance', 'EXPR_CALC_COV': '', 'BLAST_GAP_COST': '-G', 'XBLAST_GAP_COST': '-G', 'TRIM_TAIL_3': '-trim_tail_right', 'DUP_NUM': '-derep_min', 'BOW1_MAX_SUM': '-e', 'BOW1_MIN_INS': '-I', 'TRIM_TAIL_5': '-trim_tail_left', 'XBLAT_MIN_SCORE': '-minScore', 'BOW2_SPEED': '', 'TRIM_MIN_MEAN_QUAL': '-min_qual_mean', 'BLAST_WORD_SZ': '-W', 'TRIN_MIN_LGTH': '--min_contig_length'}
+Launching in command line mode
+{'TRIM': True, 'file_read1': '/home/cvcv/genorama/webserver/demo_data/reads_left.fq', 'file_read2': '/home/cvcv/genorama/webserver/demo_data/reads_right.fq', 'input_type': 'paired', 'INTERPROSCAN': True, 'DUP_DEREP1': 'on', 'DUP': True, 'FASTQC1': True}
+PROGS!!!!!!!!!!!!!!!
+set(['TRIM', 'INTERPROSCAN', 'FASTQC1', 'DUP'])
+set(['DUP'])
+['DUP_FILTER']
+{}
+args dict
+{'DUP': '-derep 1 '}
+args dict after
+{'DUP': "'-derep 1 '"}
+input_dict
+{'progs': set(['TRIM', 'INTERPROSCAN', 'FASTQC1', 'DUP']), 'args_dict': {'DUP': "'-derep 1 '"}, 'input_type': 'paired', 'blatn_ass': [], 'hmm_custom_db': [], 'reads_files': ['/home/cvcv/genorama/webserver/demo_data/reads_left.fq', '/home/cvcv/genorama/webserver/demo_data/reads_right.fq'], 'blatx_ass': [], 'blatn_reads': []}
+archivo comando   :     /home/ubuntu/server_side/commands/cleaning/larafastqc.cmd
+fastqc
+/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/STAT/fastqc_report already exists: not created (it's fine).
+DEBUG: ssh genorama@altamira1.ifca.es 'cd /gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/.cache/tmp/ ; mnsubmit --reservation=master_2017  fastqc_wRHmX1'
+archivo comando   :     /home/ubuntu/server_side/commands/cleaning/laraprinseq_dup.cmd
+DEBUG: ssh genorama@altamira1.ifca.es 'cd /gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/admin/jobs/Job_trial_new_release2/.cache/tmp/ ; mnsubmit --reservation=master_2017  dup_prinseq_Lffcoy'
+archivo comando   :     /home/ubuntu/server_side/commands/cleaning/laraprinseq_trim.cmd

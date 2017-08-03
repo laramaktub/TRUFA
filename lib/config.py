@@ -6,7 +6,7 @@ VERSION = "0.11.1"
 
 # for testing 
 PIPE_PATH = "/home/ubuntu/server_side/"
-OUT_FOLDER = "/gpfs/res_projects/cvcv/webserver/users/lari.lloret@googlemail.com/"
+OUT_FOLDER = "/gpfs/res_projects/cvcv/webserver/users/"
 
 # for stable
 #PIPE_PATH = "/var/genorama/server_side/stable/"
@@ -25,6 +25,7 @@ MINIMAL_OUTPUT="TRUE"
 
 DOCKER_CLEANING="mycleaning"
 DOCKER_ASSEMBLY="myassembly"
+DOCKER_IDENTIFY="myidentification"
 
 # Logging:
 LOGFILEBYTES = 500*1024

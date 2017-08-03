@@ -11,7 +11,7 @@ cd hmmer_transcripts/queries
 for file in `ls`
 do
 # With Hmmer 3.0 (hmmpfam for previous versions)
-    time srun --exclusive -n1 -N1 -c16 hmmscan \
+    hmmscan \
 	--tblout ../$HMM_PROFILE/$file.out.tab \
 	--cpu 16 $HMM_PATH/$HMM_PROFILE/$HMM_PROFILE.hmm $file &
 
