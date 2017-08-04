@@ -695,13 +695,13 @@ if soft_data.ass_map_progs & steps:
 #-------------------------------------------------------------------------------
     if "BOWTIE2" in steps:
 
-        prepareScript("bowtie2",
-                                    "ass_map/larabowtie2.cmd",
+        prepareScript("hisat2",
+                                    "ass_map/larahisat2.cmd",
                                     dep,
                                     folders_dict["OUT_FOLDER"],
                                     1, 16, "24:00:00", env)
-        slurm_id = prepareAndSubmit("bowtie2",
-                                    "dockers/ass_map/bowtie2.cmd",
+        slurm_id = prepareAndSubmit("hisat2",
+                                    "dockers/ass_map/hisat2.cmd",
                                     dep,
                                     folders_dict["OUT_FOLDER"],
                                     1, 16, "24:00:00", env)
