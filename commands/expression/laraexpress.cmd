@@ -20,7 +20,7 @@ wait
 #-------------------------------------------------------------------------------
 
 echo EXPRESS: REF:$ref BAM:$bam_tmp >> ${OUT_FOLDER}.LOG.txt
- express $ref ${bam_tmp}.bam \
+ express $ref ${bam_tmp} \
     -o ${EXPRESSION_FOLDER}express &
 	#-m 600 
 wait
@@ -28,7 +28,7 @@ wait
 
 #CLEANING
 #-------------------------------------------------------------------------------
-rm ${bam_tmp}.bam
+rm ${bam_tmp}
 
 #### Statistics:
 # TO ADD 
