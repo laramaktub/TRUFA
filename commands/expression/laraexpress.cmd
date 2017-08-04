@@ -13,14 +13,14 @@ bam_tmp=${EXPRESSION_FOLDER}express/aligned_reads_rsort4express
 #-------------------------------------------------------------------------------
 
 echo Sorting by reads ID for express: bam_in:$bam bam_out:$bam_tmp 
-time srun --exclusive -n1 -N1 samtools sort -n $bam $bam_tmp &
+samtools sort -n $bam -o $bam_tmp &
 wait
 
 # EXPRESS
 #-------------------------------------------------------------------------------
 
 echo EXPRESS: REF:$ref BAM:$bam_tmp >> ${OUT_FOLDER}.LOG.txt
-time srun --exclusive -n1 -N1 express $ref ${bam_tmp}.bam \
+ express $ref ${bam_tmp}.bam \
     -o ${EXPRESSION_FOLDER}express &
 	#-m 600 
 wait

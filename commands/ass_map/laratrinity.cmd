@@ -7,7 +7,7 @@ echo `date +%F\ %H:%M:%S` "START Trinity" >> ${OUT_FOLDER}.LOG.txt
 
 if [ ${#reads_files[@]} -eq 2 ]; then
     echo " entra aqui 1 "
-    time Trinity --no_bowtie  --seqType fq --max_memory 60G --CPU 16 --inchworm_cpu 16 --bflyCPU 7 --bflyHeapSpaceMax 8G \
+    time Trinity   --seqType fq --max_memory 60G --CPU 1 --inchworm_cpu 1 --bflyCPU 7 --bflyHeapSpaceMax 8G \
 	$PARAM_TRIN \
 	--left ${reads_files[0]} \
 	--right ${reads_files[1]} \
@@ -17,7 +17,7 @@ if [ ${#reads_files[@]} -eq 2 ]; then
 
 elif [ ${#reads_files[@]} -eq 1 ]; then
     echo "entra aqui 2 "
-    time Trinity  --no_bowtie --seqType fq --max_memory 60G --CPU 16 --inchworm_cpu 16 --bflyCPU 7 --bflyHeapSpaceMax 8G \
+    time Trinity  --seqType fq --max_memory 60G --CPU 1 --inchworm_cpu 1 --bflyCPU 7 --bflyHeapSpaceMax 8G \
 	$PARAM_TRIN \
 	--single ${reads_files[0]} \
 	--output trinity \

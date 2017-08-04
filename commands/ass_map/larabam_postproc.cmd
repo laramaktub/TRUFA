@@ -18,8 +18,7 @@ samtools view -Sbt ${ref}.fai $sam > $bam
 # SORT BAMS BY COORDINATES (PICARD)
 #-------------------------------------------------------------------------------
 bam_out=${ASSEMBLY_MAPPING_FOLDER}hisat2/aligned_reads_sort.bam
-time srun --exclusive -c16 -n1 -N1 \
-    java -jar ${jars}SortSam.jar \
+time  java -jar ${jars}SortSam.jar \
     INPUT=$bam \
     OUTPUT=$bam_out \
     SORT_ORDER=coordinate &
@@ -32,8 +31,7 @@ wait
 bam=$bam_out
 bam_out=${ASSEMBLY_MAPPING_FOLDER}hisat2/aligned_reads_sort_nodup.bam
 
-time srun --exclusive -c16 -n1 -N1 \
-    java -jar ${jars}MarkDuplicates.jar \
+time  java -jar ${jars}MarkDuplicates.jar \
     INPUT=$bam \
     OUTPUT=$bam_out \
     METRICS_FILE=${ASSEMBLY_MAPPING_FOLDER}hisat2/dupstat \
@@ -45,8 +43,7 @@ wait
 #-------------------------------------------------------------------------------
 bam=$bam_out
 bam_out=${ASSEMBLY_MAPPING_FOLDER}hisat2/aligned_reads_sort_nodup_mateok.bam
-time srun --exclusive -c16 -n1 -N1 \
-    java -jar ${jars}FixMateInformation.jar \
+time    java -jar ${jars}FixMateInformation.jar \
     INPUT=$bam \
     OUTPUT=$bam_out &
 wait

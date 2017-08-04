@@ -47,7 +47,7 @@ if [ ${#reads_files[@]} -eq 2 ]; then
     reads2=bowtie2/hmgz/${tmp%.*}_hmgz.fq
     
     time bowtie2 -x $index -1 $reads1 -2 $reads2 -U $reads_lonely -S $sam_output \
-	-p 16 $PARAM_BOW2 \
+	-p 1 $PARAM_BOW2 \
 	2> ${STAT_FOLDER}bowtie2.log
 
     echo BOWTIE2: R1:$reads1 R2:$reads2 S:$reads_lonely T:$transcripts PAR:$PARAM_BOW2 >> ${OUT_FOLDER}.LOG.txt
@@ -56,7 +56,7 @@ elif [ ${#reads_files[@]} -eq 1 ]; then
     reads_single=${reads_files[0]}
 
     time bowtie2 -x $index -U $reads_single -S $sam_output \
-	-p 16 $PARAM_BOW2 \
+	-p 1 $PARAM_BOW2 \
 	2> ${STAT_FOLDER}bowtie2.log
 
     echo BOWTIE2: R:$reads_single T:$transcripts PAR:$PARAM_BOW2 >> ${OUT_FOLDER}.LOG.txt

@@ -44,7 +44,6 @@ if [ ${#reads_files[@]} -eq 2 ]; then
 	--seqType fq \
 	--left $reads1 \
 	--right $reads2 \
-	--thread_count 16 \
 	--output_dir RSEM \
 	-- --bowtie-chunkmbs 1000
 #-- --fragment-length-max 500 >>> default in RSEM is 1000
@@ -61,7 +60,6 @@ elif [ ${#reads_files[@]} -eq 1 ]; then
 	--transcripts $transcripts \
 	--seqType fq \
 	--single $reads_single \
-	--thread_count 16 \
 	--output_dir RSEM 
 #	-- --bowtie-chunkmbs 1000
 #-- --fragment-length-max 500 >>> default in RSEM is 1000

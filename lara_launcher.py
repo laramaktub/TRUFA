@@ -2,12 +2,6 @@
 
 # THINGS TO IMPROVE:
 
-# THINGS TO FIX:
-# if bowtie2 directly with cufflinks or express (directly from assembly) >>> folder created in .cache/tmp
-# >>> this has been fixed but clumsy in bowtie2.cmd
-
-# THINGS TO INSTALL:
-#CDHITEST
 
 # THINGS TO IMPROVE:
 # in bowtie 2 command, check the output files names (the first linesof the cmd)
@@ -693,7 +687,7 @@ if soft_data.ass_map_progs & steps:
         # bowtie isn't in dependency list yet
 
 #-------------------------------------------------------------------------------
-    if "BOWTIE2" in steps:
+    if "HISAT2" in steps:
 
         prepareScript("hisat2",
                                     "ass_map/larahisat2.cmd",
@@ -1087,7 +1081,7 @@ if soft_data.expression_progs & steps:
 #-------------------------------------------------------------------------------
     if "CUFFDIFF" in steps:
 
-        if "BOWTIE2" in steps:
+        if "HISAT2" in steps:
             # if bowtie already selected by the user
             prepareScript("cuffdiff",
                                         "expression/laracuffdiff.cmd",
@@ -1102,13 +1096,13 @@ if soft_data.expression_progs & steps:
             slurm_ids.append( slurm_id )
 
         else:
-            prepareScript("bowtie2",
-                                        "ass_map/larabowtie2.cmd",
+            prepareScript("hisat2",
+                                        "ass_map/larahisat2.cmd",
                                         dep,
                                         folders_dict["OUT_FOLDER"],
                                         1, 16, "72:00:00", env)
-            slurm_id = prepareAndSubmit("bowtie2",
-                                        "dockers/ass_map/bowtie2.cmd",
+            slurm_id = prepareAndSubmit("hisat2",
+                                        "dockers/ass_map/hisat2.cmd",
                                         dep,
                                         folders_dict["OUT_FOLDER"],
                                         1, 16, "72:00:00", env)
@@ -1130,7 +1124,7 @@ if soft_data.expression_progs & steps:
 #-------------------------------------------------------------------------------
     if "CUFFLINKS" in steps:
                 
-        if "BOWTIE2" in steps:
+        if "HISAT2" in steps:
             # if bowtie already selected by the user
             prepareScript("cufflinks",
                                         "expression/laracufflinks.cmd",
@@ -1149,8 +1143,8 @@ if soft_data.expression_progs & steps:
             slurm_ids.append( slurm_id )
 
         else:
-            slurm_id = prepareAndSubmit("bowtie2",
-                                         "ass_map/bowtie2.cmd",
+            slurm_id = prepareAndSubmit("hisat2",
+                                         "ass_map/hisat2.cmd",
                                          dep,
                                          folders_dict["OUT_FOLDER"],
                                          1, 16, "72:00:00", env)
@@ -1195,7 +1189,7 @@ if soft_data.expression_progs & steps:
 #-------------------------------------------------------------------------------
     if "EXPRESS" in steps:
 
-        if "BOWTIE2" in steps:
+        if "HISAT2" in steps:
             prepareScript("express",
                                         "expression/laraexpress.cmd",
                                         expr_dep,
@@ -1213,13 +1207,13 @@ if soft_data.expression_progs & steps:
             slurm_ids.append(slurm_id)
         else:
             # Perform bowtie and post processing
-            prepareScript("bowtie2",
-                                        "ass_map/larabowtie2.cmd",
+            prepareScript("hisat2",
+                                        "ass_map/larahisat2.cmd",
                                         dep,
                                         folders_dict["OUT_FOLDER"],
                                         1, 16, "24:00:00", env)
-            slurm_id = prepareAndSubmit("bowtie2",
-                                        "dockers/ass_map/bowtie2.cmd",
+            slurm_id = prepareAndSubmit("hisat2",
+                                        "dockers/ass_map/hisat2.cmd",
                                         dep,
                                         folders_dict["OUT_FOLDER"],
                                         1, 16, "24:00:00", env)

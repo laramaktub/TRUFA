@@ -26,7 +26,7 @@ else
 fi
 
 #### Create the index:
-time hisat2-build -p 16 $transcripts $index
+time hisat2-build -p 1 $transcripts $index
 
 
 if [ ${#reads_files[@]} -eq 2 ]; then
@@ -46,7 +46,7 @@ if [ ${#reads_files[@]} -eq 2 ]; then
     reads2=hisat2/hmgz/${tmp%.*}_hmgz.fq
     
     time hisat2 -x $index -1 $reads1 -2 $reads2 -U $reads_lonely -S $sam_output \
-	-p 16 $PARAM_HISAT2 \
+	-p 1 $PARAM_HISAT2 \
 	2> ${STAT_FOLDER}hisat2.log
 
 			
@@ -57,7 +57,7 @@ elif [ ${#reads_files[@]} -eq 1 ]; then
     reads_single=${reads_files[0]}
 
     time hisat2 -x $index -U $reads_single -S $sam_output \
-	-p 16 $PARAM_HISAT2 \
+	-p 1 $PARAM_HISAT2 \
 	2> ${STAT_FOLDER}hisat2.log
 
     echo HISAT2: R:$reads_single T:$transcripts PAR:$PARAM_HISAT2 >> ${OUT_FOLDER}.LOG.txt
