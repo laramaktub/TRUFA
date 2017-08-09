@@ -448,3 +448,48 @@
 20170804 14:46:08 -INFO- Start server side
 20170804 14:54:25 -INFO- Start server side
 20170804 15:22:05 -INFO- Start server side
+20170807 02:54:22 -INFO- Start server side
+20170807 02:55:37 -INFO- Start server side
+20170807 02:57:46 -ERROR- list index out of range
+20170807 02:58:21 -INFO- Start server side
+20170807 02:59:32 -INFO- Start server side
+20170807 03:01:42 -ERROR- list index out of range
+20170807 03:04:31 -INFO- Start server side
+20170807 09:51:24 -INFO- Start server side
+20170807 11:56:00 -INFO- Start server side
+20170807 11:56:05 -ERROR- [Errno 2] No such file or directory: '/home/ubuntu/server_side/commands/identify/larasummarize_annot.cmd'
+20170807 12:05:59 -INFO- Start server side
+20170807 12:58:48 -INFO- Start server side
+20170808 10:40:39 -INFO- Start server side
+20170808 10:46:21 -INFO- Start server side
+20170808 11:49:00 -INFO- Start server side
+20170808 11:49:00 -ERROR- [Errno 13] Permission denied: '/gpfs/res_projects/cvcv/webserver/users'
+20170808 11:58:05 -INFO- Start server side
+20170808 11:58:05 -ERROR- [Errno 13] Permission denied: '/gpfs/res_projects/cvcv/webserver/users'
+20170808 12:10:07 -INFO- Start server side
+20170808 12:18:08 -INFO- Start server side
+20170808 12:35:01 -INFO- Start server side
+20170808 12:45:23 -INFO- Start server side
+20170808 12:51:41 -INFO- Start server side
+20170808 12:53:18 -INFO- Start server side
+20170808 12:59:13 -INFO- Start server side
+20170808 13:01:26 -ERROR- list index out of range
+20170809 10:17:39 -INFO- Start server side
+20170809 10:23:58 -INFO- Start server side
+20170809 10:25:14 -INFO- Start server side
+20170809 10:30:49 -INFO- Start server side
+20170809 10:38:00 -INFO- Start server side
+20170809 10:38:00 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/admin/jobs/Job_trial_new_release2/'
+20170809 10:38:15 -INFO- Start server side
+20170809 10:38:40 -INFO- Start server side
+20170809 10:39:41 -ERROR- list index out of range
+20170809 10:41:16 -INFO- Start server side
+20170809 10:41:16 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/admin/jobs/Job_trial_new_release2/'
+20170809 10:41:22 -INFO- Start server side
+20170809 10:43:26 -INFO- Start server side
+20170809 10:43:59 -INFO- Start server side
+20170809 10:45:40 -ERROR- list index out of range
+20170809 10:53:37 -INFO- Start server side
+20170809 10:53:37 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/admin/jobs/Job_trial_new_release2/'
+20170809 10:53:40 -INFO- Start server side
+20170809 12:04:14 -INFO- Start server side

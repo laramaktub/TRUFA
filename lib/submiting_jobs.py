@@ -205,7 +205,8 @@ def make_and_submit_job(OUT_FOLDER, cmd_file, job_name,
     print(dep)
     import tempfile
     cache_path = OUT_FOLDER + ".cache/"
-    log_path = cache_path + job_name + "%j"
+    #log_path = cache_path + job_name + "%j"
+    log_path = OUT_FOLDER + "log/" + job_name + "%j"
     tmp_path = cache_path + "tmp/"
     os.chdir(cache_path)
     # Preparing temporary files for submission:
@@ -268,7 +269,7 @@ def make_script(OUT_FOLDER, cmd_file, job_name,
     
     import tempfile
     cache_path = OUT_FOLDER + ".cache/"
-    log_path = cache_path + job_name + "%j"
+    log_path = OUT_FOLDER + "log/"+ job_name + "%j"
     print("jobname ", job_name)
     tmp_path = cache_path + "tmp/"
     os.chdir(cache_path)

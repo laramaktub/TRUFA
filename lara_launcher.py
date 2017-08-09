@@ -116,7 +116,7 @@ def makeOutputFolders(folders_dict):
         os.makedirs(folders_dict["CACHE_PATH"])
         os.mkdir(folders_dict["CACHE_PATH"] + "tmp")
         os.mkdir(folders_dict["STAT_FOLDER"])
-
+        os.mkdir(folders_dict["OUT_FOLDER"] + "log")
     except Exception as e:
         logging.error(e)
         sys.exit()
