@@ -36,15 +36,17 @@ if [ ${#reads_files[@]} -eq 2 ]; then
 # SO FAR: the RSEM command is using only the paired reads
 # RSEM is not yet supporting a mix of single and paired reads 
 
-    time /gpfs/res_apps/TRINITY_RNA_SEQ/r2013-11-10/util/RSEM_util/run_RSEM_align_n_estimate.pl \
+    time $TRINITY_HOME/util/align_and_estimate_abundance.pl \
 	--transcripts $transcripts \
 	--seqType fq \
 	--left $reads1 \
 	--right $reads2 \
         --aln_method bowtie2 \
  	--thread_count 16 \
-	--output_dir RSEM \
-	-- --bowtie-chunkmbs 1000
+	--est_method RSEM \
+        --output_dir RSEM 
+
+
 #-- --fragment-length-max 500 >>> default in RSEM is 1000
 
     # Cleaning:
@@ -55,14 +57,15 @@ if [ ${#reads_files[@]} -eq 2 ]; then
 elif [ ${#reads_files[@]} -eq 1 ]; then
     reads_single=${reads_files[0]}
 
-    time /gpfs/res_apps/TRINITY_RNA_SEQ/r2013-11-10/util/RSEM_util/run_RSEM_align_n_estimate.pl \
+    time $TRINITY_HOME/util/align_and_estimate_abundance.pl \
 	--transcripts $transcripts \
 	--seqType fq \
 	--single $reads_single \
 	--thread_count 16 \
         --aln_method bowtie2 \
-	--output_dir RSEM \
-	-- --bowtie-chunkmbs 1000
+        --est_method RSEM \
+	--output_dir RSEM 
+
 #-- --fragment-length-max 500 >>> default in RSEM is 1000
     echo RSEM: R:$reads_single T:$transcripts PAR:$PARAM_RSEM >> ${OUT_FOLDER}.LOG.txt
 

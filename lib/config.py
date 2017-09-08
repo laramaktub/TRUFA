@@ -21,6 +21,8 @@ HMMER_PROFILE_FOLDER = "/gpfs/res_projects/cvcv/webserver/seq_dbs/HMM_profiles/"
 # put true to remove "unecessary" files for the user
 MINIMAL_OUTPUT="TRUE"
 
+# File system used
+FILE_SYSTEM= "gpfs"
 # Docker
 
 DOCKER_CLEANING="mycleaning"

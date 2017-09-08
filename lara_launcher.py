@@ -137,7 +137,7 @@ def getInput(para_dict):
 def setBashEnv(input_dict, folders_dict):
     env = sj.set_environment(input_dict, folders_dict)
     env["MINIMAL_OUTPUT"]=config.MINIMAL_OUTPUT
-    
+    env["FILE_SYSTEM"]=config.FILE_SYSTEM
     # Add for MPIBLAST:
     #env["BLASTMAT"]="/mnt/seq_dbs/matrices"
     #env["MPIBLAST_SHARED"]="/mnt/seq_dbs/nr"

@@ -493,3 +493,17 @@
 20170809 10:53:37 -ERROR- [Errno 17] File exists: '/gpfs/res_projects/cvcv/webserver/users/admin/jobs/Job_trial_new_release2/'
 20170809 10:53:40 -INFO- Start server side
 20170809 12:04:14 -INFO- Start server side
+20170809 13:45:56 -INFO- Start server side
+20170809 13:46:39 -INFO- Start server side
+20170809 13:48:07 -ERROR- list index out of range
+20170809 13:49:52 -INFO- Start server side
+20170809 13:50:59 -ERROR- list index out of range
+20170809 13:53:07 -ERROR- list index out of range
+20170810 12:36:48 -INFO- Start server side
+20170810 13:13:36 -INFO- Start server side
+20170811 10:46:01 -INFO- Start server side
+20170811 11:08:16 -INFO- Start server side
+20170821 10:05:02 -INFO- Start server side
+20170907 13:22:04 -INFO- Start server side
+20170907 13:22:04 -ERROR- [Errno 13] Permission denied: '/gpfs/res_projects/cvcv/webserver/users'
+20170907 16:20:21 -INFO- Start server side
